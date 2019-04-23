@@ -1,0 +1,253 @@
+/*
+Orange #e67e22
+*/
+
+/* ---------------------------------*/
+/* BASIC SETUP */
+/* ---------------------------------*/
+
+/* First thing to do is target all elements and set the margin and padding to zero.   */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #4e4e4e;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    /* Make fonts render in a perfect way */
+    text-rendering: optimizeLegibility;
+    
+}
+
+/* ---------------------------------*/
+/* REUSABLE COMPONENTS */
+/* ---------------------------------*/
+
+
+/* The content will be in rows */
+.row {
+    /* Only value that has absolute value in pixels */
+    max-width: 1140px;
+    /* Center the content in rows */
+    margin: 0 auto;
+}
+
+/* ------ HEADINGS ------ */
+
+/* reset margin in h1 element as due to normalise css there is some margin added. */
+h1,h2 {
+    
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+}
+
+h2 {
+    font-size: 140%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+/* ------ BUTTONS ------ */
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    /* removes text underlining */
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+
+.btn-full:link,
+.btn-full:visited {
+    /* https://flatuicolors.com/palette/defo*/
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    /* text color */
+    color: #fff;
+    margin-right: 15px;
+    
+}
+
+
+.btn:hover,
+.btn:active {
+    /* https://www.0to255.com/ */
+    background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #cf6d17;
+    
+}
+
+/* ------ ICONS ------ */
+
+.header-icons {
+    position: relative;
+    margin: 0 auto;
+    resize: both;
+    overflow: auto;
+    height: 200px;
+    width: 60%;
+    
+}
+
+/*
+.icon1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    margin: -70px 0 0 -120px;
+    
+}
+*/
+
+/*
+.icon-medium {
+    color: #e67e22;
+    font-size: 280%;
+    text-align: center;
+    display: inline-block;
+    
+    
+}
+
+.icon1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(0, 900%);
+}
+
+.icon2 {
+    position: absolute;
+    left: 60%;
+    transform: translate(0, 900%);
+}
+
+.icon3 {
+    position: absolute;
+    left: 70%;
+    transform: translate(0, 1165%);
+    font-size: 250%;
+}
+*/
+
+/* ------ PARAGRAPHS ------ */
+
+.about-para1,.about-para2 {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    text-align: justify;
+}
+
+.about-para1 {
+    margin-top: 20px;
+}
+
+.about-para2 {
+    margin-top: 20px;
+}
+
+/* ---------------------------------*/
+/* HEADER */
+/* ---------------------------------*/
+
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    /* In order to see the image set height to 100% of the viewport */
+    height: 100vh;
+    position: relative;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;   
+}
+
+/*
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    border-radius: 50%;
+    
+}
+*/
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:active,
+.main-nav li a:hover {
+    border-bottom: 2px solid #e67e22;
+}
+
+/* ---------------------------------*/
+/* ABOUT ME */
+/* ---------------------------------*/
+
+.section-about {
+    background-color: #f4f4f4;
+}
