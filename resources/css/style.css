@@ -13,7 +13,7 @@ Orange #e67e22
     box-sizing: border-box;
 }
 
-html {
+html,body {
     background-color: #fff;
     color: #4e4e4e;
     font-family: 'Lato', 'Arial', sans-serif;
@@ -21,6 +21,8 @@ html {
     font-size: 20px;
     /* Make fonts render in a perfect way */
     text-rendering: optimizeLegibility;
+    /* Prevents text going out of width */
+    overflow-x: hidden; 
     
 }
 
@@ -154,10 +156,6 @@ section {
     margin-top: 20px;
 }
 
-.about-para2 {
-    margin-top: 20px;
-}
-
 /* ------ LINKS ------ */
 
 a:link,
@@ -259,11 +257,16 @@ header {
 
 .section-about {
     background-color: #f4f4f4;
+    padding-top: 20px;
 }
 
 /* ---------------------------------*/
 /* PROJECTS SECTION */
 /* ---------------------------------*/
+
+.section-projects {
+    padding-top: 20px;
+}
 
 .box {
     padding-left: 15px;
