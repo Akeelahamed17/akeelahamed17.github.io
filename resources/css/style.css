@@ -345,3 +345,20 @@ footer {
 .ul-footer {
     padding: 10px 0 20px 0;
 }
+
+
+/* ---------------------------------*/
+/* ANIMATIONS */
+/* ---------------------------------*/
+
+.js--wp-1,
+.js--wp-2{
+    opacity: 0;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated{
+    opacity: 1;
+}
